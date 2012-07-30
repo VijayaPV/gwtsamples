@@ -1,0 +1,57 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:HTMLPanel>
+		<div id="container">
+			<div id="header">
+				<div id="title" align="center">GWT IP Address To Decimal Calculator</div>
+			</div>
+			<div id="body">
+				<div class="para-panel">
+					The URL for
+					<span style="font-weight:bold">Google company</span>
+					is http://www.google.com. An nslookup
+					of
+					the URL reveals one of its
+					IP address: http://74.125.224.72 (which is the
+					real address used to
+					find the Website).
+					<br />
+					<br />
+					IP addresses are expressed in dotted-decimal format - basically 4
+					sets of numbers from 0 to 255 separated by periods. Either
+					http://74.125.224.72 or http://www.google.com will take you to the
+					same place.
+					<br />
+					<br />
+					Another way to get there is by using the decimal equivalent of its
+					dotted-decimal address: http://1249763400.
+					<br />
+					<br />
+					<div style="width: 100%; text-align:center">
+						Try out the calculator by
+						entering
+						<span style="font-weight:bold">74.125.224.72</span>
+						(with the periods).in the textbox below and click
+						Convert.
+						<br />
+					</div>
+				</div>
+				<hr width="90%" align="center" />
+				<div style="text-align:center">
+					Enter IP:
+					<g:TextBox ui:field="input" />
+					&nbsp;
+					<g:Button text="Convert" ui:field="convert" />
+					&nbsp;
+					<g:Button text="Reset" ui:field="reset" />
+				</div>
+				<br />
+				<div style="text-align:center">
+					Decimal:
+					<g:TextBox ui:field="result" />
+				</div>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>
