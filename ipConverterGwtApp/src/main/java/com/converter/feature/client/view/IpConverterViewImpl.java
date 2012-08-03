@@ -20,7 +20,6 @@ import com.google.gwt.user.client.ui.Widget;
  * 
  */
 public class IpConverterViewImpl extends Composite implements IpConverterView {
-
 	// Annotation not needed as we use the default but this allows to change the path
 	@UiTemplate("IpConverterViewImpl.ui.xml")
 	interface Binder extends UiBinder<Widget, IpConverterViewImpl> {
@@ -29,6 +28,8 @@ public class IpConverterViewImpl extends Composite implements IpConverterView {
 	TextBox input;
 	@UiField
 	TextBox result;
+	@UiField
+	TextBox octet;
 
 	/**
 	 * A reference to the presenter that is currently controlling the view.
@@ -57,8 +58,9 @@ public class IpConverterViewImpl extends Composite implements IpConverterView {
 	 * Update the UI with value received from the presenter.
 	 */
 	@Override
-	public void updateUI(long decimal) {
+	public void updateUI(long decimal,String binaryOctet) {
 		result.setText("http://"+decimal);
+		octet.setText(binaryOctet);
 	}
 
 	/**
@@ -78,5 +80,6 @@ public class IpConverterViewImpl extends Composite implements IpConverterView {
 	public void onReset(ClickEvent event){
 		input.setText("");
 		result.setText("");			
+		octet.setText("");
 	}	
 }

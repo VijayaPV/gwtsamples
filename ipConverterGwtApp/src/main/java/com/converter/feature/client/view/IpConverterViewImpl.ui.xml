@@ -51,6 +51,11 @@
 					Decimal:
 					<g:TextBox ui:field="result" />
 				</div>
+				<br />
+				<div style="text-align:center">
+					Binary Octets:
+					<g:TextBox ui:field="octet" />
+				</div>
 			</div>
 		</div>
 	</g:HTMLPanel>

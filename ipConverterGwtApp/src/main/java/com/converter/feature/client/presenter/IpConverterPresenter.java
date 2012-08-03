@@ -1,5 +1,7 @@
 package com.converter.feature.client.presenter;
 
+
+
 import com.google.gwt.user.client.ui.IsWidget;
 
 
@@ -25,7 +27,7 @@ public interface IpConverterPresenter {
 		 * UI receives update of the decimal from presenter
 		 * <p/>
 		 */
-		public void updateUI(long decimal);
+		public void updateUI(long decimal,String binaryOctet);
 	} //End of Sub Interface
 	/**
 	 * The presenter may be asked to return its view so that its parent can add the view to its own view; this

@@ -12,7 +12,6 @@ import com.google.gwt.user.client.ui.RootPanel;
  *
  */
 public class IpConverterOnLoad implements EntryPoint {
-
 	/**
 	 * This is the entry point method.
 	 */
@@ -25,5 +24,4 @@ public class IpConverterOnLoad implements EntryPoint {
 		//get view
 		rootPanel.add(ipConverterPresenter.getView());
 	}
-
 }
