@@ -23,9 +23,6 @@ public class ValidateIpAddress {
 		final RegExp IP_PATTERN = RegExp.compile(IPADDRESS_PATTERN);				  
 		MatchResult matcher = IP_PATTERN.exec(ipAddress);
 		boolean matchFound = (matcher !=null);
-		if(matchFound)
-			return true;
-		else
-			return false;
+		return matchFound;
 	}  
 }
