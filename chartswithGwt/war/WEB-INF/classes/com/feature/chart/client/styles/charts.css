@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+.inner {
+	margin-left: 10%;
+	width: 80%;
+}
+
+.buttons{
+	margin-top:5%;
+	padding-top: 15px;
+	padding-left: 15px;
+	}
+
+.buttonsPanel {
+	
+	margin: 0px;
+	font: bold 165% "Trebuchet MS", sans-serif;
+}
+
+.header {
+	border-width: 1px;
+	margin: 0px;
+	font: bold 165% "Trebuchet MS", sans-serif;
+}
+
+.menu {
+	font: 85% "Trebuchet MS", sans-serif;
+}
